@@ -9,7 +9,7 @@ contract deadManSwitch {
     
     constructor(address _presetAddress) {
         owner = msg.sender;
-        _presetAddress = presetAddress;
+        presetAddress = _presetAddress;
         lastActiveBlock = block.number;
     }
     
